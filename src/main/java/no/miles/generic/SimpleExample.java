@@ -11,6 +11,7 @@ public class SimpleExample {
         List list = new ArrayList();
         list.add("String 1");
         list.add("String 2");
+        list.add(45);
         for (int i = 0; i < list.size(); i++) {
             String s = (String) list.get(0);
             System.out.println(s);
@@ -22,6 +23,8 @@ public class SimpleExample {
         List<String> list = new ArrayList<String>();
         list.add("String 1");
         list.add("String 2");
+       // list.add(45);
+
         for (String s : list) {
             System.out.println(s);
         }
