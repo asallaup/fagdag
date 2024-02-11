@@ -21,8 +21,8 @@ public class GenericWithBounds {
         // public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll) {
         var max = Collections.max(doubleList);
 
-        var numberList2 = new TreeSet<Number>(new DoubleComparator());
-        var max2 = Collections.max(numberList2);
+//        var numberList2 = new TreeSet<Number>(new DoubleComparator());
+//        var max2 = Collections.max(numberList2);
     }
 
     private static class DoubleComparator implements Comparator<Double> {

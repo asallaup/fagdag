@@ -4,17 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa62ec84-a58a-448f-bb7a-0bb19215f5db" name="Changes" comment="First class">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/GenericWithBounds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/PecsExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/PecsUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/WhyBonds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/miles/generic/GenericWithBoundsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/miles/generic/PecsUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="fa62ec84-a58a-448f-bb7a-0bb19215f5db" name="Changes" comment="More on Genereic">
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/CSVReaderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/CsvRecord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/CsvRecordGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/IteratorExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/StreamExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/SimpleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/SimpleExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/GenericWithBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/GenericWithBounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/PecsUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/PecsUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -50,6 +50,11 @@
   "keyToString": {
     "Gradle.GenericWithBoundsTest.testUpperBond.executor": "Run",
     "Gradle.PecsUserTest.testPecsExample.executor": "Debug",
+    "Gradle.fagdag [:CSVReaderExample.main()].executor": "Debug",
+    "Gradle.fagdag [:CsvRecordGenerator.main()].executor": "Run",
+    "Gradle.fagdag [:IteratorExample.main()].executor": "Run",
+    "Gradle.fagdag [:PecsUser.main()].executor": "Run",
+    "Gradle.fagdag [:StreamExample.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -76,59 +81,79 @@
       <recent name="no.miles.generic" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PecsUserTest.testPecsExample">
-    <configuration name="GenericWithBoundsTest.testUpperBond" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;no.miles.generic.GenericWithBoundsTest.testUpperBond&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+  <component name="RunManager" selected="Application.StreamExample">
+    <configuration name="CSVReaderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.streams.CSVReaderExample" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="PecsUserTest.testPecsExample" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;no.miles.generic.PecsUserTest.testPecsExample&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="CsvRecordGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.streams.CsvRecordGenerator" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IteratorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.streams.IteratorExample" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PecsUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.generic.PecsUser" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.streams.StreamExample" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PecsUserTest.testPecsExample" />
-        <item itemvalue="Gradle.GenericWithBoundsTest.testUpperBond" />
+        <item itemvalue="Application.StreamExample" />
+        <item itemvalue="Application.IteratorExample" />
+        <item itemvalue="Application.CsvRecordGenerator" />
+        <item itemvalue="Application.CSVReaderExample" />
+        <item itemvalue="Application.PecsUser" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1707164411354</updated>
       <workItem from="1707164412248" duration="22449000" />
-      <workItem from="1707420865089" duration="5713000" />
+      <workItem from="1707420865089" duration="13070000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -174,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707166483556</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More on Genereic">
+      <option name="closed" value="true" />
+      <created>1707638105210</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1707638105210</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +218,13 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -194,14 +233,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial" />
     <MESSAGE value="First class" />
-    <option name="LAST_COMMIT_MESSAGE" value="First class" />
+    <MESSAGE value="More on Genereic" />
+    <option name="LAST_COMMIT_MESSAGE" value="More on Genereic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/no/miles/generic/PecsUser.java</url>
-          <line>17</line>
+          <line>22</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
