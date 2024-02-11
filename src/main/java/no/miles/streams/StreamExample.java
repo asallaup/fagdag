@@ -18,6 +18,14 @@ public class StreamExample {
         return res.getAccumulated();
     }
 
+    public CsvRecord createStatisticUsingParallelStream(Collection<CsvRecord> input) {
+        var res =  input.parallelStream()
+                .collect(CsvRecordStatistic::new ,
+                        (statistic, record) -> statistic.accept(record),
+                        (s1,s2) -> s1.combine(s2));
+        return res.getAccumulated();
+    }
+
     public CsvRecord createStatisticUsingStream2(Collection<CsvRecord> input) {
         var res =  input.stream()
 //                <R> R collect(Supplier<R> supplier,
@@ -31,12 +39,11 @@ public class StreamExample {
     }
 
     public List<CsvRecord> createStatisticWithGroup(Collection<CsvRecord> input) {
-        var res =  input.stream()
-                .collect(Collectors.groupingBy(CsvRecord::getId));
-        var grouped = res.entrySet().stream()
+        return input.stream()
+                .collect(Collectors.groupingBy(CsvRecord::getId))
+                .entrySet().stream()  // Is there a more elegant solution
                 .map( entry -> createStatisticUsingStream(entry.getValue()))
                 .toList();
-        return grouped;
     }
 
 
@@ -61,8 +68,14 @@ public class StreamExample {
             count++;
         }
 
-        public void combine(CsvRecordStatistic s) {
-            throw new NotImplementedException("combine not implemented");
+        public void combine(CsvRecordStatistic other) {
+            CsvRecord record = other.accumulated;
+            accumulated.setMaxValue(Math.max(accumulated.getMaxValue(), record.getMaxValue()));
+            accumulated.setSum(accumulated.getSum() + record.getSum());
+            accumulated.setAverage(accumulated.getAverage() + record.getAverage());
+            accumulated.setMinValue(Math.min(accumulated.getMinValue(), record.getMinValue()));
+            count += record.getCount();
+//            throw new NotImplementedException("combine not implemented");
         }
     }
 
