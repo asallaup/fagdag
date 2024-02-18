@@ -18,6 +18,7 @@ public class GenericWithBounds {
         numberList.forEach(System.out::println);
 
         var doubleList = new TreeSet<Double>(new NumberComparator());
+        doubleList.add(6.0);
         // public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll) {
         var max = Collections.max(doubleList);
 

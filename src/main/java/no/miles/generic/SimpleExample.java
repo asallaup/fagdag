@@ -33,6 +33,7 @@ public class SimpleExample {
     // Java 8
     public void withLambda() {
         List<String> list = new ArrayList<>();
+
         list.add("String 1");
         list.add("String 2");
         list.forEach(System.out::println);

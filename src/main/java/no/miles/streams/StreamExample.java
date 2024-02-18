@@ -18,14 +18,6 @@ public class StreamExample {
         return res.getAccumulated();
     }
 
-    public CsvRecord createStatisticUsingParallelStream(Collection<CsvRecord> input) {
-        var res =  input.parallelStream()
-                .collect(CsvRecordStatistic::new ,
-                        (statistic, record) -> statistic.accept(record),
-                        (s1,s2) -> s1.combine(s2));
-        return res.getAccumulated();
-    }
-
     public CsvRecord createStatisticUsingStream2(Collection<CsvRecord> input) {
         var res =  input.stream()
 //                <R> R collect(Supplier<R> supplier,
@@ -37,11 +29,33 @@ public class StreamExample {
                         CsvRecordStatistic::combine);
         return res.getAccumulated();
     }
+    public CsvRecord createStatisticUsingParallelStream(Collection<CsvRecord> input) {
+        var res =  input.parallelStream()
+                .collect(CsvRecordStatistic::new ,
+                        (statistic, record) -> statistic.accept(record),
+                        (s1,s2) -> s1.combine(s2));
+        return res.getAccumulated();
+    }
+
+    public CsvRecord createStatisticUsingToInt(Collection<CsvRecord> input) {
+        var sum =  input.stream()
+                .mapToInt( r -> r.getSum())
+                .sum();
+
+        var avg =  input.stream()
+                .mapToInt( r -> r.getAverage())
+                .average();
+
+        return null;
+
+    }
+
+
 
     public List<CsvRecord> createStatisticWithGroup(Collection<CsvRecord> input) {
         return input.stream()
                 .collect(Collectors.groupingBy(CsvRecord::getId))
-                .entrySet().stream()  // Is there a more elegant solution
+                .entrySet().stream()  // Is there a more elegant solution ?
                 .map( entry -> createStatisticUsingStream(entry.getValue()))
                 .toList();
     }
@@ -70,30 +84,31 @@ public class StreamExample {
 
         public void combine(CsvRecordStatistic other) {
             CsvRecord record = other.accumulated;
-            accumulated.setMaxValue(Math.max(accumulated.getMaxValue(), record.getMaxValue()));
-            accumulated.setSum(accumulated.getSum() + record.getSum());
-            accumulated.setAverage(accumulated.getAverage() + record.getAverage());
-            accumulated.setMinValue(Math.min(accumulated.getMinValue(), record.getMinValue()));
-            count += record.getCount();
-//            throw new NotImplementedException("combine not implemented");
+//            accumulated.setMaxValue(Math.max(accumulated.getMaxValue(), record.getMaxValue()));
+//            accumulated.setSum(accumulated.getSum() + record.getSum());
+//            accumulated.setAverage(accumulated.getAverage() + record.getAverage());
+//            accumulated.setMinValue(Math.min(accumulated.getMinValue(), record.getMinValue()));
+//            count += record.getCount();
+            throw new NotImplementedException("combine not implemented");
         }
     }
 
 
     public static void main(String[] args) {
         StreamExample streamExample = new StreamExample();
-        String csvFilePath = "records.csv"; // Replace with the actual path to your CSV file
-        List<CsvRecord> records = CSVReaderExample.readCSVFile(csvFilePath);
+        String csvFilePath = "records.csv";
 
+        List<CsvRecord> records = CSVReaderExample.readCSVFile(csvFilePath);
 
         CsvRecord accumulated = streamExample.createStatisticUsingStream(records);
         System.out.println(accumulated);
         System.out.println();
 
-
-
         List<CsvRecord> grouped = streamExample.createStatisticWithGroup(records);
         grouped.forEach(System.out::println);
+
+
+//        streamExample.createStatisticUsingToInt(records);
     }
 
 }
