@@ -20,9 +20,9 @@ public class IteratorExample {
 
     public static void accumulate(CsvRecord accumulated, CsvRecord record) {
         accumulated.setSum(accumulated.getSum() + record.getSum());
-        accumulated.setAverage(accumulated.getAverage() + record.getAverage());
         accumulated.setMinValue(Math.min(accumulated.getMinValue(), record.getMinValue()));
         accumulated.setMaxValue(Math.max(accumulated.getMaxValue(), record.getMaxValue()));
+        accumulated.setAverage(accumulated.getAverage() + record.getAverage());
     }
 
     public static void main(String[] args) {

@@ -9,13 +9,17 @@ public class WhyBounds {
         List<Number> numberList = new ArrayList<>();
 
         TestExample<Number> numberTestExample = new TestExample<>();
+        numberList.add(100);
+        numberList.add(200L);
+        numberList.add(200.0);
 
         numberTestExample.doSomehingWithCollection(numberList);
-        List<Integer> integerList = new ArrayList<>();
+        List<Double> doubleList = new ArrayList<>();
+        doubleList.add(100.0);
+        doubleList.add(200.3);
+        doubleList.add(300.5);
 
-
-      //  numberTestExample.doSomehingWithCollection(integerList);
-
+        // numberTestExample.doSomehingWithCollection(doubleList);
     }
 
     static class TestExample<T> {
@@ -26,18 +30,6 @@ public class WhyBounds {
         }
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
 //    static class TestExample<T> {
 //        void doSomehingWithCollection(Collection<? extends T> items){
 //            for (T item: items){
@@ -46,6 +38,9 @@ public class WhyBounds {
 //        }
 //    }
 
-
+    public static void main(String[] args) {
+        WhyBounds whyBounds = new WhyBounds();
+        whyBounds.testBounds();
+    }
 
 }

@@ -17,13 +17,16 @@ public class GenericWithBounds {
         numberList.add(1L);
         numberList.forEach(System.out::println);
 
-        var doubleList = new TreeSet<Double>(new NumberComparator());
+        Collection<Double> doubleList = new TreeSet<>(new NumberComparator());
         doubleList.add(6.0);
-        // public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll) {
-        var max = Collections.max(doubleList);
 
-//        var numberList2 = new TreeSet<Number>(new DoubleComparator());
-//        var max2 = Collections.max(numberList2);
+        // Collection<Number> numberList2 = new TreeSet<Number>(new DoubleComparator());
+
+        // public static <T extends Object & Comparable<? super T>> T max(Collection<? extends T> coll) {
+        Double maxDouble = Collections.max(doubleList);
+
+      //  Number maxNumber = Collections.max(numberList);
+      //  Double max2 = Collections.max(numberList2);
     }
 
     private static class DoubleComparator implements Comparator<Double> {

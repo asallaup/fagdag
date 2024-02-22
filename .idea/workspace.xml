@@ -4,20 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa62ec84-a58a-448f-bb7a-0bb19215f5db" name="Changes" comment="Use parallel stream">
-      <change afterPath="$PROJECT_DIR$/bike.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/bike/model/BikeRideRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeRecordCSVReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/switchex/SwichPatternMatching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/switchex/SwitchHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/switchex/SwitchRecordPattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/no/miles/model/PatternTester.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="fa62ec84-a58a-448f-bb7a-0bb19215f5db" name="Changes" comment="Lot if stuff, added more example in Class Cast">
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/CallBackAnonymousClass_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/CallBackFunction_4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/CallBackFunction_5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/CallBackLambdaMoreComplex_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/CallBackLambda_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/FunctionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/functions/ProducerConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/FlatMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeRecordCSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeRecordCSVReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/GenericWithBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/GenericWithBounds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/SimpleExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/SimpleExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/WhyBonds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/WhyBounds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/generic/WhyBounds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/generic/WhyBounds.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/streams/IteratorExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/IteratorExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/no/miles/streams/StreamExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/no/miles/streams/StreamExample.java" afterDir="false" />
     </list>
@@ -43,6 +45,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home/lib/src.zip!/java.base/java/util/function/BiFunction.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://$USER_HOME$/Library/Java/JavaVirtualMachines/openjdk-21.0.2/Contents/Home/lib/src.zip!/java.base/java/util/function/Function.java" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -54,20 +60,30 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BikeRecordCSVReader (1).executor": "Run",
+    "Gradle.Build fagdag.executor": "Run",
     "Gradle.GenericWithBoundsTest.testUpperBond.executor": "Run",
     "Gradle.PatternTester.patternTester.executor": "Run",
     "Gradle.PecsUserTest.testPecsExample.executor": "Debug",
+    "Gradle.fagdag [:BikeExample.main()].executor": "Run",
     "Gradle.fagdag [:BikeRecordCSVReader.main()].executor": "Run",
     "Gradle.fagdag [:CSVReaderExample.main()].executor": "Debug",
+    "Gradle.fagdag [:CallBackFunction_5.main()].executor": "Run",
     "Gradle.fagdag [:CsvRecordGenerator.main()].executor": "Run",
+    "Gradle.fagdag [:FlatMap.main()].executor": "Run",
+    "Gradle.fagdag [:FunctionExample.main()].executor": "Run",
     "Gradle.fagdag [:IteratorExample.main()].executor": "Run",
     "Gradle.fagdag [:PecsUser.main()].executor": "Run",
-    "Gradle.fagdag [:StreamExample.main()].executor": "Debug",
+    "Gradle.fagdag [:ProducerConsumer.main()].executor": "Run",
+    "Gradle.fagdag [:SimpleExample.main()].executor": "Run",
+    "Gradle.fagdag [:StreamExample.main()].executor": "Run",
+    "Gradle.fagdag [:WhyBounds.main()].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "full.screen.before.presentation.mode": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/arvid/java/fagdag",
     "node.js.detected.package.eslint": "true",
@@ -92,10 +108,13 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="no.miles.generic" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="no.miles.functions" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.BikeRecordCSVReader">
-    <configuration name="BikeRecordCSVReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="no.miles.bike.service.BikeRecordCSVReader" />
+  <component name="RunManager" selected="Application.CallBackFunction_5">
+    <configuration name="BikeExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.bike.service.BikeExample" />
       <module name="fagdag.main" />
       <extension name="coverage">
         <pattern>
@@ -107,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CsvRecordGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="no.miles.streams.CsvRecordGenerator" />
+    <configuration name="CallBackFunction_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.functions.CallBackFunction_5" />
       <module name="fagdag.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="PATTERN" value="no.miles.functions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,12 +139,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IteratorExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="no.miles.streams.IteratorExample" />
+    <configuration name="PecsUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.functions.PecsUser" />
       <module name="fagdag.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="no.miles.streams.*" />
+          <option name="PATTERN" value="no.miles.functions.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,37 +165,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PatternTester.patternTester" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;no.miles.model.PatternTester.patternTester&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
+    <configuration name="WhyBounds" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.miles.generic.WhyBounds" />
+      <module name="fagdag.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="no.miles.generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.CallBackFunction_5" />
+      <item itemvalue="Application.BikeExample" />
+      <item itemvalue="Application.PecsUser" />
+      <item itemvalue="Application.WhyBounds" />
+      <item itemvalue="Application.StreamExample" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PatternTester.patternTester" />
-        <item itemvalue="Application.BikeRecordCSVReader" />
+        <item itemvalue="Application.CallBackFunction_5" />
+        <item itemvalue="Application.BikeExample" />
         <item itemvalue="Application.StreamExample" />
-        <item itemvalue="Application.IteratorExample" />
-        <item itemvalue="Application.CsvRecordGenerator" />
+        <item itemvalue="Application.PecsUser" />
+        <item itemvalue="Application.WhyBounds" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +212,9 @@
       <updated>1707164411354</updated>
       <workItem from="1707164412248" duration="22449000" />
       <workItem from="1707420865089" duration="21725000" />
-      <workItem from="1707718156317" duration="22152000" />
+      <workItem from="1707718156317" duration="32078000" />
+      <workItem from="1708275184171" duration="32291000" />
+      <workItem from="1708456658818" duration="6369000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <option name="closed" value="true" />
@@ -247,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707651497597</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lot if stuff, added more example in Class Cast">
+      <option name="closed" value="true" />
+      <created>1708257470200</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708257470200</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +301,8 @@
     <MESSAGE value="More on Genereic" />
     <MESSAGE value="Implem,ent steam group by" />
     <MESSAGE value="Use parallel stream" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use parallel stream" />
+    <MESSAGE value="Lot if stuff, added more example in Class Cast" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lot if stuff, added more example in Class Cast" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,18 +314,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/no/miles/streams/StreamExample.java</url>
-          <line>40</line>
+          <line>56</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeRecordCSVReader.java</url>
-          <line>48</line>
+          <url>file://$PROJECT_DIR$/src/main/java/no/miles/streams/FlatMap.java</url>
+          <line>63</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/no/miles/bike/service/BikeExample.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
